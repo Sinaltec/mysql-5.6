@@ -9,3 +9,4 @@
 #  Do not use any TAB characters for whitespace.
 #
 ##############################################################################
+socket_summary_by_instance_func : DISABLED because regoldenizing this for SO_REUSE is expensive

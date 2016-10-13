@@ -1,13 +1,13 @@
 SELECT @@GLOBAL.num_sharded_listen_sockets;
 @@GLOBAL.num_sharded_listen_sockets
-1
+4
 1 Expected
 SET @@GLOBAL.num_sharded_listen_sockets=2;
 ERROR HY000: Variable 'num_sharded_listen_sockets' is a read only variable
 Expected error 'Read only variable'
 SELECT @@GLOBAL.num_sharded_listen_sockets;
 @@GLOBAL.num_sharded_listen_sockets
-1
+4
 1 Expected
 SELECT @@num_sharded_listen_sockets = @@GLOBAL.num_sharded_listen_sockets;
 @@num_sharded_listen_sockets = @@GLOBAL.num_sharded_listen_sockets
@@ -21,5 +21,5 @@ ERROR HY000: Variable 'num_sharded_listen_sockets' is a GLOBAL variable
 Expected error 'Variable is a GLOBAL variable'
 SELECT @@GLOBAL.num_sharded_listen_sockets;
 @@GLOBAL.num_sharded_listen_sockets
-1
+4
 1 Expected

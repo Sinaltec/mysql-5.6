@@ -51,7 +51,7 @@ if ($rpl_debug)
 
 # Send shutdown to the connected server and give
 # it 14 seconds to die before zapping it
---let $shutdown_server_timeout= 14
+--let $shutdown_server_timeout= 40
 if ($rpl_force_stop)
 {
    # if force_stop is set, shutdown server immediately(equal to killing the server)
